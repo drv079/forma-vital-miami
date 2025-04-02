@@ -40,7 +40,7 @@ function App() {
       ],
       aboutTitle: 'Sobre Nosotros',
       contactTitle: 'Información de Contacto',
-      contact1: 'Estamos comprometidos a apoyar tu camino hacia una versión más saludable de ti mismo. Para precios y promociones, llámanos.',
+      contact1: 'Estamos comprometidos a apoyar tu camino hacia una versión más saludable de ti mismo.',
       contact2: 'Para precios y promociones, llámanos:',
       phone: '305-225-7790',
       email: 'formavitalmiami@gmail.com',
