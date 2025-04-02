@@ -4,8 +4,7 @@ body {
   padding: 0;
   background: linear-gradient(to bottom right, #FFF4E0, #FFE4B5);
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .forma-vital-container {
@@ -16,6 +15,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: linear-gradient(to bottom right, #FFF4E0, #FFE4B5); /* Match body */
+  min-height: 100vh; /* Ensure it covers full height */
 }
 
 .language-picker {
@@ -111,7 +112,6 @@ body {
   hyphens: auto;
 }
 
-/* All other paragraphs remain center-aligned */
 .section-content p {
   text-align: center;
   color: #34495E;
@@ -139,6 +139,13 @@ body {
 .contact-info p {
   margin: 10px 0;
   color: #34495E;
+}
+
+iframe {
+  max-width: 100%; /* Make iframe responsive */
+  width: 100%; /* Override inline width="600" */
+  height: 300px; /* Adjustable height */
+  border: none;
 }
 
 .business-hours {
@@ -179,9 +186,25 @@ body {
   .forma-vital-container {
     padding: 10px;
   }
-
   .logo {
     width: 150px;
     height: 150px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  .section h3 {
+    font-size: 1.5rem;
+  }
+  iframe {
+    height: 200px; /* Smaller map on mobile */
+  }
+  .hours-row {
+    flex-direction: column; /* Stack day/time on mobile */
+    gap: 5px;
+    text-align: center;
   }
 }
